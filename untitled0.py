@@ -28,9 +28,22 @@ class Employee(Person):
     
 
 
-x = Person("Marge", "Simpson")
-y = Employee("Homer", "Simpson", "1007")
+#x = Person("Marge", "Simpson")
+#y = Employee("Homer", "Simpson", "1007")
 
-print(x.Name())
+#print(x.Name())
 #print(y.GetEmployee())
-print(y.get_staffnumber())
+#print(y.get_staffnumber())
+
+def some_function():
+    for i in range(4):
+        yield i
+
+    def some_other():
+        for i in range(6):
+            yield i
+    for i in some_other():
+        yield i
+    
+for i in some_function():
+    print(i)

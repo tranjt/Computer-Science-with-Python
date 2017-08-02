@@ -97,3 +97,20 @@ L = [6, 5, 4, 3, 3, 2, 1, 0]
 modSwapSort(L)
 modSwapSort(K)
 modSwapSort(J)
+
+def foo_one(n):
+    """ Assume n is an int >= 0 """
+    answer = 1.0
+    while n > 1:
+        print(n)
+        answer *= n
+        n -= 1
+    return answer
+
+def foo_two(n):
+    """ Assume n is an int >= 0 """
+    print(n)
+    if n <= 1: 
+        return 1.0
+    else: 
+        return n*foo_two(n-1)

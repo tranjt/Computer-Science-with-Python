@@ -1,2 +1,2 @@
 # Computer Science with Python
-## MIT course
+## MITx: 6.00.1x course
